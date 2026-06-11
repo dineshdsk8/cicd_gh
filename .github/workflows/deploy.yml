@@ -25,7 +25,7 @@ jobs:
               rm -rf ~/my-app
             fi
 
-            git clone https://github.com/dineshdsk8/cicd_gh.git ~/my-app
+            git clone https://github.com/dineshdsk8/flask-node-app.git ~/my-app
 
             cd ~/my-app
 
