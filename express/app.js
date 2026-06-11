@@ -10,7 +10,7 @@ app.get("/", async (req, res) => {
     const response = await axios.get(backendUrl);
 
     res.send(`
-      <h1>Express Frontend Running</h1>
+      <h1>Heloo Aspirants/h1>
       <pre>${JSON.stringify(response.data, null, 2)}</pre>
     `);
   } catch (err) {

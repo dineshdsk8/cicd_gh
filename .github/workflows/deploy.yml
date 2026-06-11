@@ -24,7 +24,7 @@ jobs:
 
             rm -rf my-app
 
-            git clone https://github.com/<username>/<repo>.git my-app
+            git clone https://github.com/dineshdsk8/cicd_gh.git my-app
 
             cd my-app
 
