@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 6000
 
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]
