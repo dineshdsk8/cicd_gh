@@ -25,12 +25,12 @@ jobs:
               rm -rf ~/my-app
             fi
 
-            git clone https://github.com/dineshdsk8/flask-node-app.git ~/my-app
+            git clone https://github.com/dineshdsk8/cicd_gh.git ~/my-app
 
             cd ~/my-app
 
             docker compose down --remove-orphans
 
             docker compose build --no-cache
-            
+
             docker compose up -d --force-recreate
