@@ -1,0 +1,14 @@
+services:
+  flask:
+    build: ./flask
+    container_name: flask-app
+    ports:
+      - "6000:6000"
+
+  express:
+    build: ./express
+    container_name: express-app
+    ports:
+      - "4000:4000"
+    depends_on:
+      - flask
