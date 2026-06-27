@@ -1,4 +1,4 @@
-# Part 1: Deploy Flask and Express on EC2
+# Deploy Flask and Express on EC2
 
 ## Objective
 
