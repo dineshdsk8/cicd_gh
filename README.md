@@ -1,22 +1,22 @@
-## Deploy Flask and Express on EC2
+# Part 1: Deploy Flask and Express on EC2
 
 ## Objective
 
-Deploy a Flask backend and an Express frontend on a single Amazon EC2 instance.
+Deploy the Flask backend and Express frontend on a single Amazon EC2 instance.
 
 ## Prerequisites
 
-* Amazon EC2 Instance
+* AWS EC2 Instance
 * Python
 * Node.js
 * Git
-* PM2
+* GitHub Actions
 
 ## Deployment Steps
 
 1. Launch an EC2 instance.
-2. Install Python, Node.js, Git, and PM2.
-3. Clone the Flask and Express repositories.
+2. Install Python, Node.js, and Git.
+3. Clone the Flask and Express repositories from GitHub.
 4. Install Flask dependencies:
 
    ```
@@ -27,13 +27,20 @@ Deploy a Flask backend and an Express frontend on a single Amazon EC2 instance.
    ```
    npm install
    ```
-6. Start both applications using PM2:
+6. Configure both applications to run on different ports.
+7. Configure GitHub Actions to automatically deploy the latest code to the EC2 instance whenever changes are pushed to GitHub.
+8. Verify that both applications are accessible through the EC2 public IP.
 
-   ```
-   pm2 start
-   ```
-7. Verify both applications are running.
+## Technologies Used
 
-## Architecture
+* AWS EC2
+* Python (Flask)
+* Node.js (Express)
+* Git
+* GitHub Actions
 
-GitHub → EC2 Instance → Flask Backend & Express Frontend (Managed by PM2)
+## Repository Structure
+
+* Backend 
+* Frontend
+* GitHub Actions Workflow
